@@ -1,0 +1,35 @@
+.nav-header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.nav-header a,
+.nav-header button {
+  background: #eee;
+  width: 40px;
+  height: 40px;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.nav-header a:hover,
+.nav-header a:focus,
+.nav-header button:hover
+.nav-header button:focus {
+  background: #fff;
+  box-shadow: 0 0 0 3px #eee;
+  border-color: #333;
+  outline: none;
+}
+
+.nav-header a.active {
+  background: #fff;
+  box-shadow: 0 0 0 3px #ffbf00;
+  border-color: #ed9121;
+}
